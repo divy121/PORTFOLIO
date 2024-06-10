@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="./jquery-3.7.1.slim.min.js"></script>
+<!-- <script src="../Imsc 4th Sem/AWT PRACTICAL/AWT Assignment 1/jquery-3.7.1.js"></script> -->
+<script src="https://kit.fontawesome.com/286b9e315f.js" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $("#skill").click(function () {
+            $("#skills").show();
+            $("#experience").hide();
+            $("#education").hide();
+        })
+        $("#exp").click(function () {
+            $("#experience").show();
+            $("#skills").hide();
+            $("#education").hide();
+        })
+        $("#edu").click(function () {
+            $("#experience").hide();
+            $("#skills").hide();
+            $("#education").show();
+        })
+        $(".btn3").click(function () {
+            alert("Successfully Submitted");
+        })
+    })
+</script>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+                <nav>
+
+                    <span class="name"><span class="h">S</span>hubham</span>
+                    <ul class="class">
+                        <li><a href="#home" class="a" id="home">Home</a></li><a class="div"></a>
+                        <li><a href="#about" class="a">About</a></li>
+                        <li><a href="#services" class="a">My Project</a></li>
+                        <li><a href="#skills2" class="a">Skills</a></li>
+                        <li><a href="#contact" class="a">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="headtext">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Shubham</span><br>Rathod</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="shubham.jpg">
+                </div>
+                <div class="col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello! I'm Shubham, a Computer Engineering student passionate about Python and web
+                        development. I enjoy creating innovative solutions and have experience building responsive,
+                        user-friendly websites. I’m driven by a love for technology and a commitment to making a
+                        meaningful impact through my work. Let's connect and collaborate on exciting projects!</p>
+                    <div class="titles">
+                        <p class="link active" id="skill">Skills</p>
+                        <p class="link active" id="exp">Experience</p>
+                        <p class="link active" id="edu">Education</p>
+                    </div>
+                    <div class="contents active" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Django , bs4</li>
+                            <li><span>Web Development</span><br>Web App development</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="experience">
+                        <ul>
+                            <li><span class="flex"><span>PRAXWARE TECHNOLOGIES</span>
+                                    <p class="experienceRole">- INTERN</p>
+                                </span>
+                                <button class="badge">
+                                    <span>JUN 26-2022 - JUL, 27-2022
+                                    </span>
+                                </button>
+                                <p class="experienceDetail">
+
+                                    I have one months work as a Intern at Praxware
+                                    technologies. I have Experience work for Python
+                                    programming language as a intern at praxware technology.
+                                </p>
+                            </li>
+                            <li><span class="flex"><span>OASIS INFOBYTE
+                                    </span>
+                                    <p class="experienceRole">- INTERN</p>
+                                </span>
+                                <button class="badge">
+                                    <span>JUL 29-2022 - AUG, 30-2022
+                                    </span>
+                                </button>
+                                <p class="experienceDetail">
+                                    I have one month work as Intern at OASIS INFOBYTE. I
+                                    have Experience work for Web Developing and Design as
+                                    intern at OASIS INFOBYTE.
+                                </p>
+                            </li>
+                            <li><span class="flex"><span>WAY TO WEB
+                                    </span>
+                                    <p class="experienceRole">- INTERN</p>
+                                </span>
+                                <button class="badge">
+                                    <span>MAY 24-2024 - JUN, 1-2024
+                                    </span>
+                                </button>
+                                <p class="experienceDetail">
+                                    I have one Week work as Intern at WAY TO WEB. I have
+                                    Experience work for Python programming as intern at
+                                    WAY TO WEB.
+
+                                </p>
+                            </li>
+                            <li><span class="flex"><span>PRODIGY INFOTECH
+                                    </span>
+                                    <p class="experienceRole">- INTERN</p>
+                                </span>
+                                <button class="badge">
+                                    <span>JUN ,1-2024 - JUL, 2-2024
+                                    </span>
+                                </button>
+                                <p class="experienceDetail">
+                                    I have one month work as Intern at PRODIGY INFOTECH I
+                                    have Experience work for Web Developing and Design as
+                                    intern at PRODIGY INFOTECH.
+
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Completed 10th</li>
+                            <li><span>2019-2022</span><br>Completed Diploma Engineering from Government Polytechnic -
+                                Ahmedabad</li>
+                            <li><span>2025</span><br>Bachelor of Engineering from L. D. College of Engineering | Gujarat
+                                Technological University</li>
+                            <!-- <li><span>2027</span><br>Msc(ca & it) from K.S. School of Business and Management | Gujarat
+                                University</li> -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Project</h1>
+            <diV class="projectContainer">
+                <div class="e-card playing">
+                    <div class="image"></div>
+                    
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    
+                  
+                        <div class="infotop">
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                    <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                    4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                    21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                    22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                    17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                    14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                    3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                    19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                    12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                    16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                    15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                    19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                     16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                     20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                    E-COMM 
+                  <br>
+                  <div class="name">E-Comm Website <a href="">Github</a></div>
+                    </div>
+                  </div>
+                <div class="e-card playing">
+                    <div class="image"></div>
+                    
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    
+                  
+                        <div class="infotop">
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                    <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                    4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                    21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                    22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                    17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                    14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                    3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                    19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                    12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                    16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                    15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                    19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                     16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                     20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                    GAME
+                  <br>
+                  <div class="name">Flappy Bird Game  <a href="https://github.com/ShubhamRathod12/FLAPPY-GAME">Github</a></div>
+                    </div>
+                  </div>
+                <div class="e-card playing">
+                    <div class="image"></div>
+                    
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    
+                  
+                        <div class="infotop">
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                    <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                    4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                    21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                    22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                    17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                    14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                    3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                    19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                    12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                    16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                    15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                    19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                     16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                     20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                    MINI JARVIS
+                  <br>
+                  <div class="name"> Voice Assistant System  <a href="https://github.com/ShubhamRathod12/Mini-Jarvis">Github</a></div>
+                    </div>
+                  </div>
+                <div class="e-card playing">
+                    <div class="image"></div>
+                    
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    
+                  
+                        <div class="infotop">
+                  
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon">
+                    <path fill="currentColor" d="M19.4133 4.89862L14.5863 2.17544C12.9911 1.27485 11.0089 1.27485 9.41368 2.17544L4.58674
+                    4.89862C2.99153 5.7992 2 7.47596 2 9.2763V14.7235C2 16.5238 2.99153 18.2014 4.58674 19.1012L9.41368
+                    21.8252C10.2079 22.2734 11.105 22.5 12.0046 22.5C12.6952 22.5 13.3874 22.3657 14.0349 22.0954C14.2204
+                    22.018 14.4059 21.9273 14.5872 21.8252L19.4141 19.1012C19.9765 18.7831 20.4655 18.3728 20.8651
+                    17.8825C21.597 16.9894 22 15.8671 22 14.7243V9.27713C22 7.47678 21.0085 5.7992 19.4133 4.89862ZM4.10784
+                    14.7235V9.2763C4.10784 8.20928 4.6955 7.21559 5.64066 6.68166L10.4676 3.95848C10.9398 3.69152 11.4701
+                    3.55804 11.9996 3.55804C12.5291 3.55804 13.0594 3.69152 13.5324 3.95848L18.3593 6.68166C19.3045 7.21476
+                    19.8922 8.20928 19.8922 9.2763V9.75997C19.1426 9.60836 18.377 9.53091 17.6022 9.53091C14.7929 9.53091
+                    12.1041 10.5501 10.0309 12.3999C8.36735 13.8847 7.21142 15.8012 6.68783 17.9081L5.63981 17.3165C4.69466
+                    16.7834 4.10699 15.7897 4.10699 14.7235H4.10784ZM10.4676 20.0413L8.60933 18.9924C8.94996 17.0479 9.94402
+                    15.2665 11.4515 13.921C13.1353 12.4181 15.3198 11.5908 17.6022 11.5908C18.3804 11.5908 19.1477 11.6864
+                    19.8922 11.8742V14.7235C19.8922 15.2278 19.7589 15.7254 19.5119 16.1662C18.7615 15.3596 17.6806 14.8528
+                     16.4783 14.8528C14.2136 14.8528 12.3781 16.6466 12.3781 18.8598C12.3781 19.3937 12.4861 19.9021 12.68
+                     20.3676C11.9347 20.5316 11.1396 20.4203 10.4684 20.0413H10.4676Z"></path></svg><br>      
+                    GAME
+                  <br>
+                  <div class="name">Snak Game <a href="https://github.com/ShubhamRathod12/Snack-game">Github</a></div>
+                    </div>
+                  </div>
+
+                  
+
+                <!-- <div class="box" > E-COM WEBSITE 
+                     <a href="">Github</a> </div>
+                <div class="box" >FLAPPY BIRD GAME <a href="https://github.com/ShubhamRathod12/FLAPPY-GAME">Github</a> </div>
+                <div class="box" >VOICE ASSISTANT SYSTEM <a href="https://github.com/ShubhamRathod12/Mini-Jarvis">Github</a></div>
+                <div class="box" >SNAK GAME <a href="https://github.com/ShubhamRathod12/Snack-game">Github</a> </div>
+            </div> -->
+            <!-- <div class="list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Here's a concise list of services for a web designer:<br><br>
+                        1. Custom website design<br><br>
+                        2. Responsive design<br><br>
+                        3. User interface (UI) design<br><br>
+                        4. Graphic design elements<br><br>
+                        5. Typography and color selection<br><br>
+                        6. Accessibility and usability<br><br>
+                        7. E-commerce design<br><br>
+                        8. Website maintenance and support<br><br>
+                        9. Consultation and collaboration</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Here's a concise list of services for a UI/UX designer:<br><br>
+                        1. UI Design<br><br>
+                        2. UX Design<br><br>
+                        3. Prototyping<br><br>
+                        4. Usability Testing<br><br>
+                        5. Interaction Design<br><br>
+                        6. Information Architecture<br><br>
+                        7. Visual Design<br><br>
+                        8. Accessibility<br><br>
+                        9. Collaboration<br><br>
+                        10. Iterative Improvement</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Here's a concise list of services for a UI/UX designer:<br><br>
+                        1. UI/UX Design<br><br>
+                        2. Prototyping<br><br>
+                        3. Usability Testing<br><br>
+                        4. Graphic Design<br><br>
+                        5. Branding Integration<br><br>
+                        6. Responsive Design<br><br>
+                        7. Collaboration<br><br>
+                        8. Iterative Design</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- <div class="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="h9_s_SS - Copy - Copy.png"><br>
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from the playstore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="h9_s_SS - Copy - Copy.png"><br>
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from the playstore</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="h9_s_SS - Copy - Copy.png"><br>
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from the playstore</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div> -->
+    <!-- <a href="#" class="btn">See More</a> -->
+    <!-- </div> -->
+
+    <div id="skills2">
+        <h3 class="heading">SKILLS</h3><br>
+        <div class="left">
+            <h4>HTML</h4><a class="content">80%</a>
+            <div class="html">
+                <div class="fill"></div>
+            </div><br>
+
+            <h4>C</h4><a class="content">83%</a>
+            <div class="html">
+                <div class="fill1"></div>
+            </div><br>
+
+            <h4>JS</h4><a class="content">70%</a>
+            <div class="html">
+                <div class="fill2"></div>
+            </div><br>
+
+            <h4>C++</h4><a class="content">50%</a>
+            <div class="html">
+                <div class="fill3"></div>
+            </div><br>
+
+            <h4>CSS</h4><a class="content">70%</a>
+            <div class="html">
+                <div class="fill4"></div>
+            </div><br>
+
+           
+        </div>
+        <div class="right">
+            
+
+            <h4>Python</h4><a class="content">80%</a>
+            <div class="html">
+                <div class="fill9"></div>
+            </div><br>
+
+            <h4>SQL</h4><a class="content">80%</a>
+            <div class="html">
+                <div class="fill10"></div>
+            </div><br>
+
+            <h4>Communication</h4><a class="content">80%</a>
+            <div class="html">
+                <div class="fill11"></div>
+            </div><br>
+
+            <h4>Leadership</h4><a class="content">80%</a>
+            <div class="html">
+                <div class="fill12"></div>
+            </div><br>
+
+            <h4>JAVA</h4><a class="content">50%</a>
+            <div class="html">
+                <div class="fill13"></div>
+            </div><br>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="leftcontact">
+                    <h1 class="subtitle t">Contact Me</h1> 
+                    <p><a href="gmail//shubhamrathod0222@gmail.com"><i
+                                class="fa-solid fa-paper-plane"></a></i>shubhamrathod0222@gmail.com</p>
+                    <p><a href="https://web.whatsapp.com/8140153621"><i class="fa-brands fa-whatsapp"></i></a></i>+91
+                        8140153621</p>
+                    <div class="socialicon">
+                        <!-- <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
+                        <a href="https://www.instagram.com/shubham_rathod022?igsh=bXcwMXc2ODJ0cjJh"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/?trk=404_page"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ShubhamRathod12"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Resume Shubham Rathod.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="rightcontact">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your mail" required>
+                        <textarea name="message" rows="5" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2 btn3">SUBMIT</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i>shubham.</p>
+        </div>
+    </div>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyCKhOYmbqOF44xjRjsLvJVwT1NCpEYFvSEtmdRPJZeWMoyf_2vq5Isv64sAiUaJ4NNsw/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
