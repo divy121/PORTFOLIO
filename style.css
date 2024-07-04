@@ -120,6 +120,7 @@ body{
     background-size: cover;
     background-position: center;
     object-fit: contain;
+    background-attachment: fixed;
 
 }
 .container{
